@@ -1,0 +1,64 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000                 AREA             STACK_OP, CODE, READONLY
+    3 00000000                 EXPORT           do_stack_operations
+    4 00000000         do_stack_operations
+    5 00000000 F04F 0011       MOV              R0,#0x11
+    6 00000004 F04F 0122       MOV              R1,#0X22
+    7 00000008 F04F 0233       MOV              R2,#0X33
+    8 0000000C B407            PUSH             {R0-R2}     ; PUSH the contents
+                                                             of RO,R1,R2
+    9 0000000E F3EF 8014       MRS              R0,CONTROL  ; Read the Contents
+                                                             of CONTROL registe
+                                                            r
+   10 00000012 F040 0002       ORR              R0,R0,#0X02 ; set the SPSEL bit
+                                                             to 1, to select PS
+                                                            P
+   11 00000016 F380 8814       MSR              CONTROL,R0  ; Write back to the
+                                                             CONTROL register 
+   12 0000001A F3EF 8008       MRS              R0,MSP
+   13 0000001E F380 8809       MSR              PSP,R0      ; Initialize the PS
+                                                            P
+   14 00000022 BC07            POP              {R0-R2}     ; POP back 
+   15 00000024         
+   16 00000024 4770            BX               lr          ; Return.
+   17 00000026                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M7.fp.sp --apcs=
+interwork --depend=.\objects\stack_op.d -o.\objects\stack_op.o -I.\RTE\_STM32F7
+23-DISCOVERY -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include -IC:\Keil_v5\A
+RM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include --pr
+edefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 524" --predefine="_
+RTE_ SETA 1" --predefine="STM32F723xx SETA 1" --list=.\listings\stack_op.lst ..
+\..\..\Downloads\Lab-src-code-v2\Lab_src_code\lecture_29\src\stack_op.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+STACK_OP 00000000
+
+Symbol: STACK_OP
+   Definitions
+      At line 2 in file ..\..\..\Downloads\Lab-src-code-v2\Lab_src_code\lecture
+_29\src\stack_op.s
+   Uses
+      None
+Comment: STACK_OP unused
+do_stack_operations 00000000
+
+Symbol: do_stack_operations
+   Definitions
+      At line 4 in file ..\..\..\Downloads\Lab-src-code-v2\Lab_src_code\lecture
+_29\src\stack_op.s
+   Uses
+      At line 3 in file ..\..\..\Downloads\Lab-src-code-v2\Lab_src_code\lecture
+_29\src\stack_op.s
+Comment: do_stack_operations used once
+2 symbols
+337 symbols in table
