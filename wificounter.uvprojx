@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\wificounter</IncludePath>
+              <IncludePath>.\drivers</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
