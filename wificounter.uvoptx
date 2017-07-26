@@ -206,7 +206,7 @@
   </Target>
 
   <Group>
-    <GroupName>Source</GroupName>
+    <GroupName>Drivers</GroupName>
     <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
@@ -218,7 +218,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\hal_GPIO_driver.h</PathWithFileName>
+      <PathWithFileName>.\src\drivers\hal_GPIO_driver.h</PathWithFileName>
       <FilenameWithoutPath>hal_GPIO_driver.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -230,7 +230,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\hal_GPIO_driver.c</PathWithFileName>
+      <PathWithFileName>.\src\drivers\hal_GPIO_driver.c</PathWithFileName>
       <FilenameWithoutPath>hal_GPIO_driver.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -238,7 +238,7 @@
   </Group>
 
   <Group>
-    <GroupName>UserApp</GroupName>
+    <GroupName>Main</GroupName>
     <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
@@ -250,7 +250,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\Downloads\Lab-src-code-v2\Lab_src_code\lecture_29\src\main.c</PathWithFileName>
+      <PathWithFileName>.\src\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -262,7 +262,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\led.c</PathWithFileName>
+      <PathWithFileName>.\src\led.c</PathWithFileName>
       <FilenameWithoutPath>led.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -274,7 +274,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\led.h</PathWithFileName>
+      <PathWithFileName>.\src\led.h</PathWithFileName>
       <FilenameWithoutPath>led.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>

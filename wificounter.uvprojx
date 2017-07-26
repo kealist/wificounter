@@ -378,37 +378,37 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source</GroupName>
+          <GroupName>Drivers</GroupName>
           <Files>
             <File>
               <FileName>hal_GPIO_driver.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\hal_GPIO_driver.h</FilePath>
+              <FilePath>.\src\drivers\hal_GPIO_driver.h</FilePath>
             </File>
             <File>
               <FileName>hal_GPIO_driver.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\hal_GPIO_driver.c</FilePath>
+              <FilePath>.\src\drivers\hal_GPIO_driver.c</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>UserApp</GroupName>
+          <GroupName>Main</GroupName>
           <Files>
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Downloads\Lab-src-code-v2\Lab_src_code\lecture_29\src\main.c</FilePath>
+              <FilePath>.\src\main.c</FilePath>
             </File>
             <File>
               <FileName>led.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\led.c</FilePath>
+              <FilePath>.\src\led.c</FilePath>
             </File>
             <File>
               <FileName>led.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\led.h</FilePath>
+              <FilePath>.\src\led.h</FilePath>
             </File>
           </Files>
         </Group>
