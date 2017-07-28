@@ -1,7 +1,7 @@
 #ifndef __LED_H_
 #define __LED_H_
 
-#include "hal_GPIO_driver.h"
+#include "hal_gpio_driver.h"
 
 #define EXTIx_IRQn	EXTIO_IRQn
 #define EXTIx_IRQHandler	EXTIO_IRQHandler

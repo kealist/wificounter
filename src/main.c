@@ -10,17 +10,29 @@ using MSP as a stack pointer, and then POP the contents back  using PSP as a sta
 
 int  main(void)
 {
-	uint32_t i;
-	led_init();
-	/* LEDs PA7 , PB1 */
+	
+	_HAL_RCC_GPIOA_CLK_ENABLE();
+	_HAL_RCC_GPIOB_CLK_ENABLE();
+	
 
+	/* LEDs PA7 , PB1 */
+	led_init();
+  /* Button PA0*/
+	hal_gpio_configure_interrupt(GPIO_BUTTON_PIN, INT_FALLING_EDGE);
+	hal_gpio_enable_interrupt(GPIO_BUTTON_PIN, EXTI0_IRQn);
 	while (1) {
-			led_turn_on(GPIOA, LED_USER5);
-			led_turn_on(GPIOB, LED_USER6);
-			for (i=0;i<500000;i++) {}
-			led_turn_off(GPIOA, LED_USER5);
-			led_turn_off(GPIOB, LED_USER6);
-			for (i=0;i<500000;i++) {}
+		/*
+		
+			led_toggle(GPIOA, LED_USER5);
+			led_toggle(GPIOB, LED_USER6);
+		*/
 	}
-	return 0;
 }
+
+void EXTI0_IRQHandler(void) 
+{	
+	hal_gpio_clear_interrupt (GPIO_BUTTON_PIN);
+	led_toggle(GPIOA, LED_USER5);
+	led_toggle(GPIOB, LED_USER6);
+}
+

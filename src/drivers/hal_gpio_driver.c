@@ -34,6 +34,9 @@ void hal_gpio_set_alt_function(GPIO_TypeDef *GPIOx, uint16_t pin_no, uint16_t al
 		}
 }
 
+
+
+
 /* API Exposed */
 
 void hal_gpio_init(GPIO_TypeDef *GPIOx, gpio_pin_conf_t *gpio_pin_conf)
@@ -63,4 +66,34 @@ void hal_gpio_write_to_pin(GPIO_TypeDef *GPIOx, uint16_t pin_no, uint8_t val)
 				GPIOx->ODR &= ~(1 << pin_no);
 
 		}
+}
+
+void hal_gpio_configure_interrupt(uint16_t pin_no, int_edge_sel_t edge_sel)
+{
+	switch(edge_sel){
+		case INT_RISING_EDGE : 
+			EXTI->RTSR |= 1 << pin_no;
+			break;
+		case INT_FALLING_EDGE :
+			EXTI->FTSR |= 1 << pin_no;
+			break;
+		case INT_RISING_FALLING_EDGE :
+			EXTI->RTSR |= 1 << pin_no;
+		  EXTI->FTSR |= 1 << pin_no;
+			break;
+	}
+}
+
+void hal_gpio_enable_interrupt(uint16_t pin_no, IRQn_Type irq_no)
+{
+	EXTI->IMR |= 1 << pin_no;
+	NVIC_EnableIRQ(irq_no);
+}
+
+void hal_gpio_clear_interrupt(uint16_t pin_no)
+{
+  if(EXTI->PR & (1 << pin_no)) 
+	{
+		EXTI->PR |= 1 << pin_no;
+	}
 }

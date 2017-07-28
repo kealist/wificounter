@@ -56,6 +56,12 @@ typedef struct {
 	uint32_t	alternate;/* */
 } gpio_pin_conf_t;/* */
 
+typedef enum 
+{
+	INT_RISING_EDGE,
+	INT_FALLING_EDGE,
+	INT_RISING_FALLING_EDGE
+} int_edge_sel_t;
 
 /* Driver Exposed APIs */
 
@@ -72,5 +78,10 @@ void hal_gpio_write_to_pin(GPIO_TypeDef *GPIOx, uint16_t pin_no, uint8_t val);
 
 uint8_t hal_gpio_read_from_pin(GPIO_TypeDef *GPIOx, uint16_t pin_no);
 
+void hal_gpio_configure_interrupt(uint16_t pin_no, int_edge_sel_t edge_sel);
+
+void hal_gpio_enable_interrupt(uint16_t pin_no, IRQn_Type irq_no);
+
+void hal_gpio_clear_interrupt(uint16_t pin_no);
 
 #endif /* __HAL_GPIO_DRIVER_H */

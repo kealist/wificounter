@@ -1,13 +1,12 @@
 #include <stdint.h>
 #include "led.h"
-#include "hal_GPIO_driver.h"
+#include "hal_gpio_driver.h"
 
 
 void led_init(void)	
 {
 	gpio_pin_conf_t led_pin_conf;
-	_HAL_RCC_GPIOA_CLK_ENABLE();
-	_HAL_RCC_GPIOB_CLK_ENABLE();
+
 	
 	//configure LED5 .
 	led_pin_conf.pin = LED_USER5;

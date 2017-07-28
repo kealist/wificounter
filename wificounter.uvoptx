@@ -218,8 +218,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\src\drivers\hal_GPIO_driver.h</PathWithFileName>
-      <FilenameWithoutPath>hal_GPIO_driver.h</FilenameWithoutPath>
+      <PathWithFileName>.\src\drivers\hal_gpio_driver.h</PathWithFileName>
+      <FilenameWithoutPath>hal_gpio_driver.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -230,8 +230,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\src\drivers\hal_GPIO_driver.c</PathWithFileName>
-      <FilenameWithoutPath>hal_GPIO_driver.c</FilenameWithoutPath>
+      <PathWithFileName>.\src\drivers\hal_gpio_driver.c</PathWithFileName>
+      <FilenameWithoutPath>hal_gpio_driver.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
