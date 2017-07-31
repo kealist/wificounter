@@ -8,7 +8,16 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588C2C04)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_compiler.h)(0x5898F24A)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_armcc.h)(0x5898F24A)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h)(0x5866E39E)
-F (.\src\main.c)(0x597B42EA)(--c99 -c --cpu Cortex-M7.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\src\drivers-I.\RTE\_STM32F723-DISCOVERY-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F723xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\src\drivers\hal_spi_driver.c)(0x597F67A2)(--c99 -c --cpu Cortex-M7.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\src\drivers -I .\src\drivers-I.\RTE\_STM32F723-DISCOVERY-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F723xx-o .\objects\hal_spi_driver.o --omf_browse .\objects\hal_spi_driver.crf --depend .\objects\hal_spi_driver.d)
+I (src\drivers\hal_spi_driver.h)(0x597F66E9)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f723xx.h)(0x5866E39E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm7.h)(0x5898F24A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588C2C04)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_compiler.h)(0x5898F24A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_armcc.h)(0x5898F24A)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h)(0x5866E39E)
+F (.\src\drivers\hal_spi_driver.h)(0x597F66E9)(--c99 -c --cpu Cortex-M7.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\src\drivers -I .\src\drivers-I.\RTE\_STM32F723-DISCOVERY-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F723xx-o .\objects\hal_spi_driver_1.o --omf_browse .\objects\hal_spi_driver_1.crf --depend .\objects\hal_spi_driver_1.d)
+F (.\src\main.c)(0x597F5AA2)(--c99 -c --cpu Cortex-M7.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\src\drivers-I.\RTE\_STM32F723-DISCOVERY-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F723xx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588C2C04)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h)(0x5866E39E)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f723xx.h)(0x5866E39E)
@@ -17,6 +26,7 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_compiler.h)(0x5898F24
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_armcc.h)(0x5898F24A)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h)(0x5866E39E)
 I (.\src\drivers\hal_gpio_driver.h)(0x597B3CDA)
+I (.\src\drivers\hal_spi_driver.h)(0x597F66E9)
 I (src\led.h)(0x597B3D26)
 F (.\src\led.c)(0x597B427A)(--c99 -c --cpu Cortex-M7.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\src\drivers-I.\RTE\_STM32F723-DISCOVERY-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F723xx-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588C2C04)

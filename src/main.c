@@ -6,6 +6,7 @@ using MSP as a stack pointer, and then POP the contents back  using PSP as a sta
 #include <stdint.h>
 #include "stm32f7xx.h"
 #include "hal_gpio_driver.h"
+#include "hal_spi_driver.h"
 #include "led.h"
 
 int  main(void)

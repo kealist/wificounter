@@ -1,5 +1,6 @@
 --cpu Cortex-M7.fp.sp
 ".\objects\hal_gpio_driver.o"
+".\objects\hal_spi_driver.o"
 ".\objects\main.o"
 ".\objects\led.o"
 ".\objects\startup_stm32f723xx.o"
