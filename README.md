@@ -4,7 +4,7 @@ Based on STM32F723E-Discovery Board with a ESP-01 Wifi board attached, this proj
 
 ## Progress
 
-* Added foundation for header for basic SPI driver (2017-07-27)
+* Added foundation for header for basic SPI driver (2017-07-31)
 * Implemented interrupt support for GPIO HAL driver (2017-07-27)
 * Implemented basic custom GPIO HAL driver (2017-07-24)
 
